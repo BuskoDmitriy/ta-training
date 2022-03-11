@@ -40,3 +40,31 @@ if (numbers[i] > 3){
 }
 console.log(fnumbers);
 
+// Реализовать цикл, который будет выводить число а, пока оно не станет меньше 10
+let i;
+     do {
+         i = prompt('Введите число')
+ }
+ while(i>10 && i);
+
+// Реализовать цикл, который выводит в консоль простые числа
+let z = 20;
+ for (let i = 2; i <= z; i++) {
+   let isSimple = true;
+   for (let j = 2; j < i; j++) {
+     if (i % j == 0 ) {
+       isSimple = false;
+       break;
+     }
+   }
+   if (isSimple) {
+    console.log(`Number ${i} is simple`)
+   }
+ }
+
+// Реализовать цикл, который выводит в консоль нечетные числа
+let num = 2;
+while(num<20){
+    num++;
+    if(num%2) console.log(num);
+}
