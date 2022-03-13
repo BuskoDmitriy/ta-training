@@ -68,3 +68,10 @@ while(num<20){
     num++;
     if(num%2) console.log(num);
 }
+
+// Написать функцию, которая принимает два параметра - массив и число и выводит индекс элемента массива равный числу
+function test(array, value) {
+    console.log(array.findIndex((element) => element === value ))
+}
+
+test([1,2,3,4,5,6], 4)
